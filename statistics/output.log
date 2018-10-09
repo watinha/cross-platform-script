@@ -1,0 +1,95 @@
+[1] "Precision"
+[1] "SVM.target"
+[1] "rf.target"
+[1] "c5.boosted20.target"
+[1] "c5.target"
+[1] "SVM.crosscheck"
+[1] "rf.crosscheck"
+[1] "c5.boosted20.crosscheck"
+[1] "c5.crosscheck"
+[1] "Precision General"
+
+	Shapiro-Wilk normality test
+
+data:  prec[, "C5.0 Target"]
+W = 0.97297, p-value = 0.4447
+
+
+	Shapiro-Wilk normality test
+
+data:  prec[, "C5.0 Crosscheck"]
+W = 0.94593, p-value = 0.05498
+
+[1] "T-Test"
+
+	Paired t-test
+
+data:  prec[, "C5.0 Target"] and prec[, "C5.0 Crosscheck"]
+t = 7.3003, df = 39, p-value = 8.324e-09
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.2377417 0.4199764
+sample estimates:
+mean of the differences 
+              0.3288591 
+
+[1] "Recall"
+[1] "SVM.target"
+[1] "rf.target"
+[1] "c5.boosted20.target"
+[1] "c5.target"
+[1] "SVM.crosscheck"
+[1] "rf.crosscheck"
+[1] "c5.boosted20.crosscheck"
+[1] "c5.crosscheck"
+[1] "Recall General"
+
+	Shapiro-Wilk normality test
+
+data:  rec[, "C5.0 Target"]
+W = 0.92872, p-value = 0.01463
+
+
+	Shapiro-Wilk normality test
+
+data:  rec[, "C5.0 Crosscheck"]
+W = 0.93091, p-value = 0.01725
+
+[1] "Recall mann whitney"
+
+	Wilcoxon signed rank test with continuity correction
+
+data:  rec[, "C5.0 Target"] and rec[, "C5.0 Crosscheck"]
+V = 816, p-value = 5.021e-08
+alternative hypothesis: true location shift is not equal to 0
+
+[1] "F-measure"
+[1] "SVM.target"
+[1] "rf.target"
+[1] "c5.boosted20.target"
+[1] "c5.target"
+[1] "SVM.crosscheck"
+[1] "rf.crosscheck"
+[1] "c5.boosted20.crosscheck"
+[1] "c5.crosscheck"
+[1] "F-measure General t.test"
+
+	Shapiro-Wilk normality test
+
+data:  fmeasure[, "C5.0 Target"]
+W = 0.90416, p-value = 0.002532
+
+
+	Shapiro-Wilk normality test
+
+data:  fmeasure[, "C5.0 Crosscheck"]
+W = 0.9404, p-value = 0.03568
+
+[1] "F-Measure mann whitney"
+
+	Wilcoxon signed rank test
+
+data:  fmeasure[, "C5.0 Target"] and fmeasure[, "C5.0 Crosscheck"]
+V = 814, p-value = 2.547e-11
+alternative hypothesis: true location shift is not equal to 0
+
